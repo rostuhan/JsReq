@@ -4,11 +4,9 @@ Easy requests, no more long code
 <h1 align="center">How to use</h1>
 
 ```html
-<head>
-	<!--Add this-->
-	<script src="https://cdn.jsdelivr.net/gh/rostuhan/JsReq@main/jsreq.js"></script>
-</head>
+<script src="https://cdn.jsdelivr.net/gh/rostuhan/JsReq@main/jsreq.js"></script>
 ```
+Add line above to head of your html document
 
 <h1 align="center">Api</h1>
 
