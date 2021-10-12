@@ -16,5 +16,3 @@ function Post(url, data) {
       body: JSON.stringify(data)
     })
 }
-  
-alert('Test');
