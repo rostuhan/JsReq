@@ -4,6 +4,8 @@ Easy requests, no more long code
 <h1 align="center">How to use</h1>
 ```javascript
 
-Hello
+if (!false) {
+  idk();
+}
 
 ```
