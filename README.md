@@ -10,11 +10,12 @@ Add line above to head of your html document
 
 <h1 align="center">Api</h1>
 
-<div style="border: 2px lime inset;">
+<table>
+<tr><td>
 
 ```js
 Get(URL) // Returns Array
 Post(URL, DATA) // Sends data
 ```
-
+</td></tr>
 </div>
