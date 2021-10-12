@@ -3,6 +3,13 @@ Easy requests, no more long code
 <br>
 <h1 align="center">How to use</h1>
 
+```html
+<head>
+	<!--Add this to <head>-->
+	<script src="https://cdn.jsdelivr.net/gh/rostuhan/JsReq@main/jsreq.js"></script>
+</head>
+```
+
 <h1 align="center">Api</h1>
 
 ```js
