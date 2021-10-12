@@ -16,3 +16,20 @@ function Post(url, data) {
       body: JSON.stringify(data)
     })
 }
+function Delete(url) {
+  fetch(url, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "Application/json"
+    }
+  })
+}
+function Put(url, data) {
+  fetch(url, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "Application/json"
+    },
+    body: JSON.stringify(data)
+  })
+}
