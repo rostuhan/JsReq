@@ -4,7 +4,7 @@ Easy requests, no more long code
 <h1 align="center">How to use</h1>
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/rostuhan/JsReq@main/jsreq.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rostuhan/JsReq@main/main.js"></script>
 ```
 Add line above to head of your html document
 
