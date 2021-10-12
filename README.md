@@ -5,7 +5,7 @@ Easy requests, no more long code
 
 ```html
 <head>
-	<!--Add this to <head>-->
+	<!--Add this-->
 	<script src="https://cdn.jsdelivr.net/gh/rostuhan/JsReq@main/jsreq.js"></script>
 </head>
 ```
