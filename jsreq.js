@@ -1,35 +1,37 @@
 // This code is not mine bc im bad at requests
 
-function Get(url) {
+function Get(theUrl) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", url, false );
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
     xmlHttp.send( null );
-    return JSON.parse(xmlHttp.responseText);
+    return xmlHttp.responseText;
 }
 
-function Post(url, data) {
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/json"
-      },
-      body: JSON.stringify(data)
-    })
-}
-function Delete(url) {
-  fetch(url, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "Application/json"
-    }
-  })
-}
-function Put(url, data) {
-  fetch(url, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "Application/json"
-    },
-    body: JSON.stringify(data)
-  })
-}
+function Post(method, url, data) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.onload = function () {
+        if (this.status >= 200 && this.status < 300) {
+          resolve(xhr.response);
+        } else {
+          reject({
+            status: this.status,
+            statusText: xhr.statusText
+          });
+        }
+      };
+      xhr.onerror = function () {
+        reject({
+          status: this.status,
+          statusText: xhr.statusText
+        });
+      };
+      if(method=="POST" && data){
+          xhr.send(data);
+      }else{
+          xhr.send();
+      }
+    });
+  }
+  
