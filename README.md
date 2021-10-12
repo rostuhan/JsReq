@@ -10,7 +10,7 @@ Add line above to head of your html document
 
 <h1 align="center">Api</h1>
 
-<div>
+<div style="border: 2px lime inset;">
 
 ```js
 Get(URL) // Returns Array
