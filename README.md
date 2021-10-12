@@ -13,6 +13,8 @@ Add line above to head of your html document
 ```js
 Get(URL /* String */); // Returns Array
 Post(URL /* String */, DATA /* Array */); // Sends data
+Delete(URL /* String */); // Deletes data
+Put(URL /* String */, DATA /* Array */); // Puts data
 ```
 
 
