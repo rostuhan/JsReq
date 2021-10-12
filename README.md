@@ -11,8 +11,8 @@ Add line above to head of your html document
 <h1 align="center">Api</h1>
 
 ```js
-Get(URL: string); // Returns Array
-Post(URL: string, DATA: array); // Sends data
+Get(URL /* String */); // Returns Array
+Post(URL /* String */, DATA /* Array */); // Sends data
 ```
 
 
